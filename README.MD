@@ -12,10 +12,10 @@ To get a Free API Key with limited Quota, please visit [Football-Data API](https
 let client = FootballDataClient(apiKey: "Your API KEY")
 ```
 
-### Fetch Latest Standings
+### Fetch Standings
 Fetch latest table standings for EPL
 ```swift
-let standings = try await client.fetchLatestStandings(competitionId: 2021, filterOption: .latest)
+let standings = try await client.fetchStandings(competitionId: 2021, filterOption: .latest)
 ```
 
 ### Fetch Top Scorers 
