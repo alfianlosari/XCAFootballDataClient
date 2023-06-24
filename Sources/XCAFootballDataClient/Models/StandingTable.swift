@@ -31,11 +31,11 @@ public struct TeamStandingTable: Identifiable, Decodable {
     }
     
     public let playedGames: Int
-    var playedGamesText: String {
+    public var playedGamesText: String {
         String(playedGames)
     }
     public let won: Int
-    var wonText: String {
+    public var wonText: String {
         String(won)
     }
     public let draw: Int
@@ -43,23 +43,23 @@ public struct TeamStandingTable: Identifiable, Decodable {
         String(draw)
     }
     public let lost: Int
-    var lostText: String {
+    public var lostText: String {
         String(lost)
     }
     public let points: Int
-    var pointsText: String {
+    public var pointsText: String {
         String(points)
     }
     public let goalsFor: Int
-    var goalsForText: String {
+    public var goalsForText: String {
         String(goalsFor)
     }
     public let goalsAgainst: Int
-    var goalsAgainstText: String {
+    public var goalsAgainstText: String {
         String(goalsAgainst)
     }
     public let goalDifference: Int
-    var goalDifferenceText: String {
+    public var goalDifferenceText: String {
         String(goalDifference)
     }
     
