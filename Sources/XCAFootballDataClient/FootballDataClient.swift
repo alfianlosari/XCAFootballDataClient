@@ -28,7 +28,7 @@ public struct FootballDataClient {
         self.apiKey = apiKey
     }
     
-    public func fetchLatestStandings(competitionId: Int, filterOption: FilterOption = .latest) async throws -> [TeamStandingTable] {
+    public func fetchStandings(competitionId: Int, filterOption: FilterOption = .latest) async throws -> [TeamStandingTable] {
         let url = baseURL + "/competitions/\(competitionId)/standings?\(filterOption.urlQuery)"
         let urlRequest = URLRequest(url: URL(string: url)!)
         let response: StandingResponse = try await fetchData(request: urlRequest)
