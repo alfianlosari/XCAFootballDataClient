@@ -39,7 +39,7 @@ public struct TeamStandingTable: Identifiable, Decodable {
         String(won)
     }
     public let draw: Int
-    var drawText: String {
+    public var drawText: String {
         String(draw)
     }
     public let lost: Int
